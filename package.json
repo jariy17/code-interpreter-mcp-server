@@ -1,0 +1,47 @@
+{
+  "name": "tjariy-code-interpreter-mcp-server",
+  "version": "1.0.0",
+  "description": "MCP server for AWS Bedrock AgentCore CodeInterpreter",
+  "author": "tjariy",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tjariy/code-interpreter-mcp-server"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "bin": {
+    "tjariy-code-interpreter-mcp-server": "./dist/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx src/index.ts",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "aws",
+    "bedrock",
+    "code-interpreter"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "bedrock-agentcore": "^0.2.0",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.5.0"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
