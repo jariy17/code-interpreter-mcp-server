@@ -5,7 +5,7 @@
   "author": "tjariy",
   "repository": {
     "type": "git",
-    "url": "https://github.com/tjariy/code-interpreter-mcp-server"
+    "url": "https://github.com/jariy17/code-interpreter-mcp-server"
   },
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
